@@ -35,7 +35,7 @@ public class Event extends Message {
 
     public static final String ALL_EVENTS = "allEvents";
 
-    //public static final String TYPE_COMMAND_RESULT = "commandResult";
+    public static final String TYPE_COMMAND_RESULT = "commandResult";
 
     public static final String TYPE_DEVICE_ONLINE = "deviceOnline";
     public static final String TYPE_DEVICE_UNKNOWN = "deviceUnknown";
@@ -45,21 +45,21 @@ public class Event extends Message {
     public static final String TYPE_DEVICE_STOPPED = "deviceStopped";
 
     public static final String TYPE_DEVICE_OVERSPEED = "deviceOverspeed";
-    //public static final String TYPE_DEVICE_FUEL_DROP = "deviceFuelDrop";
+    public static final String TYPE_DEVICE_FUEL_DROP = "deviceFuelDrop";
 
     public static final String TYPE_GEOFENCE_ENTER = "geofenceEnter";
     public static final String TYPE_GEOFENCE_EXIT = "geofenceExit";
 
-    //public static final String TYPE_ALARM = "alarm";
+    public static final String TYPE_ALARM = "alarm";
 
-    //public static final String TYPE_IGNITION_ON = "ignitionOn";
-    //public static final String TYPE_IGNITION_OFF = "ignitionOff";
+    public static final String TYPE_IGNITION_ON = "ignitionOn";
+    public static final String TYPE_IGNITION_OFF = "ignitionOff";
 
-    //public static final String TYPE_MAINTENANCE = "maintenance";
+    public static final String TYPE_MAINTENANCE = "maintenance";
 
-    //public static final String TYPE_TEXT_MESSAGE = "textMessage";
+    public static final String TYPE_TEXT_MESSAGE = "textMessage";
 
-    //public static final String TYPE_DRIVER_CHANGED = "driverChanged";
+    public static final String TYPE_DRIVER_CHANGED = "driverChanged";
 
     private Date serverTime;
 

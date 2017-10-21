@@ -18,7 +18,7 @@ package org.traccar.events;
 
 import org.traccar.Context;
 import org.traccar.model.Device;
-//import org.traccar.model.Event;
+import org.traccar.model.Event;
 
 public final class TextMessageEventHandler {
 
@@ -27,11 +27,11 @@ public final class TextMessageEventHandler {
 
     public static void handleTextMessage(String phone, String message) {
         Device device = Context.getDeviceManager().getDeviceByPhone(phone);
-        /* awais if (device != null && Context.getNotificationManager() != null) {
+        if (device != null && Context.getNotificationManager() != null) {
             Event event = new Event(Event.TYPE_TEXT_MESSAGE, device.getId());
             event.set("message", message);
             Context.getNotificationManager().updateEvent(event, null);
-        }*/
+        }
     }
 
 }

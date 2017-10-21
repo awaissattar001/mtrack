@@ -16,7 +16,7 @@
  */
 package org.traccar.events;
 
-//import java.util.Collections;
+import java.util.Collections;
 import java.util.Map;
 
 import org.traccar.BaseEventHandler;
@@ -43,13 +43,13 @@ public class IgnitionEventHandler extends BaseEventHandler {
             if (lastPosition != null && lastPosition.getAttributes().containsKey(Position.KEY_IGNITION)) {
                 boolean oldIgnition = lastPosition.getBoolean(Position.KEY_IGNITION);
 
-                /* awais if (ignition && !oldIgnition) {
+                if (ignition && !oldIgnition) {
                     result = Collections.singletonMap(
                             new Event(Event.TYPE_IGNITION_ON, position.getDeviceId(), position.getId()), position);
                 } else if (!ignition && oldIgnition) {
                     result = Collections.singletonMap(
                             new Event(Event.TYPE_IGNITION_OFF, position.getDeviceId(), position.getId()), position);
-                }*/
+                }
             }
         }
         return result;
