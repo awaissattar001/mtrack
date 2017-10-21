@@ -21,7 +21,7 @@ import org.traccar.model.Device;
 import org.traccar.model.Event;
 import org.traccar.model.Position;
 
-import java.util.Collections;
+//import java.util.Collections;
 import java.util.Map;
 
 public class FuelDropEventHandler extends BaseEventHandler {
@@ -49,11 +49,11 @@ public class FuelDropEventHandler extends BaseEventHandler {
 
                 double drop = lastPosition.getDouble(Position.KEY_FUEL_LEVEL)
                         - position.getDouble(Position.KEY_FUEL_LEVEL);
-                if (drop >= fuelDropThreshold) {
+                /* awais if (drop >= fuelDropThreshold) {
                     Event event = new Event(Event.TYPE_DEVICE_FUEL_DROP, position.getDeviceId(), position.getId());
                     event.set(ATTRIBUTE_FUEL_DROP_THRESHOLD, fuelDropThreshold);
                     return Collections.singletonMap(event, position);
-                }
+                }*/
             }
         }
 

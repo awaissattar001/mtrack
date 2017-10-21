@@ -16,7 +16,7 @@
  */
 package org.traccar.events;
 
-import java.util.Collections;
+//import java.util.Collections;
 import java.util.Map;
 
 import org.traccar.BaseEventHandler;
@@ -57,11 +57,11 @@ public class MaintenanceEventHandler extends BaseEventHandler {
         oldTotalDistance -= maintenanceStart;
         newTotalDistance -= maintenanceStart;
 
-        if ((long) (oldTotalDistance / maintenanceInterval) < (long) (newTotalDistance / maintenanceInterval)) {
+        /* if ((long) (oldTotalDistance / maintenanceInterval) < (long) (newTotalDistance / maintenanceInterval)) {
             Event event = new Event(Event.TYPE_MAINTENANCE, position.getDeviceId(), position.getId());
             event.set(Position.KEY_TOTAL_DISTANCE, newTotalDistance);
             return Collections.singletonMap(event, position);
-        }
+        }*/
 
         return null;
     }
